@@ -1,0 +1,121 @@
+.champions-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr)
+}
+
+@media (min-width: 450px) {
+    .champions-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 750px) {
+    .champions-list {
+        grid-template-columns: repeat(5, 1fr)
+    }
+}
+
+@media (min-width: 900px) {
+    .champions-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (min-width: 1100px) {
+    .champions-list {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .champions-list {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media (min-width: 1450px) {
+    .champions-list {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-bckg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.champion-img {
+    height: 400px;
+}
+
+.champion-img img {
+    height: 400px;
+    width: auto;
+}
+
+.row {
+    display: flex;
+
+}
+
+.champion-tags span + span:before {
+    content: ",";
+    margin-right: 5px;
+}
+
+.skill-text {
+    display: none;
+}
+
+.spells {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-content {
+    height: 200px;
+}
+
+.cell + .cell {
+    margin-left: 50px;
+}
+
+.champion-name {
+    text-align: center;
+}
+
+.champion-tags {
+    text-align: center;
+}
+
+.tablica {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.skill-item-wrap {
+    width: 138px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.skill-image-wrap, .skill-name {
+    text-align: center;
+}
